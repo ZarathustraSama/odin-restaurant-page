@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'Italiana';
+  src: url(assets/fonts/Italiana/Italiana-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(assets/fonts/Roboto/Roboto-Black.ttf);
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
   background-image: url(assets/img/fancy-bg-l.jpg);
+  background-size: cover;
   margin: 0;
   padding: 0;
   margin-top: 10px;
@@ -13,23 +28,80 @@ nav {
 
 button {
   font-size: 1.5em;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
   margin: 0px 12px;
   border: 5px solid gold;
+  background-color: whitesmoke;
 }
 
-button:hover, button:active {
+button:hover {
   background-color: gold;
+}
+
+#content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+main {
+  margin-top: 1em;
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+h1, h2 {
+  background-color: whitesmoke;
+  border: 5px solid gold;
+  font-family: "Italiana", serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+section {
+  background-color: whitesmoke;
+  border: 5px solid gold;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  padding: 16px;
+  margin: 16px 0px;
+}
+
+.food-card, .info-card {
+  text-align: center;
+}
+
+.info-card {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-card h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+section>img {
+  width: 50%;
+  border-radius: 24px;
 }
 
 @media (max-width: 1260px) {
   body {
     background-image: url(assets/img/fancy-bg-m.jpg);
+    background-repeat: no-repeat;
   }
 }
 
 @media (max-width: 599px) {
   body {
     background-image: url(assets/img/fancy-bg-s.jpg);
+    background-repeat: no-repeat;
   }
 }

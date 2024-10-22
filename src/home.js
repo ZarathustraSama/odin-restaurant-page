@@ -1,5 +1,11 @@
-function home() {
-  const content = document.getElementById("content");
+function home(templates) {
+  templates["headerTitle"].innerText = "Sushi Future";
+  templates["section1"].innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet auctor dolor. Proin nibh mi, ullamcorper at erat eu, tristique euismod metus. Ut accumsan, mauris in aliquam laoreet, erat lorem aliquet ex, sed rhoncus nunc diam et lacus. In semper vitae sapien eu cursus. Vestibulum in pharetra erat, eget condimentum lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sit amet ligula dolor. Proin leo turpis, fermentum id aliquam vitae, tempus in arcu. Morbi metus arcu, convallis vitae vehicula id, commodo ac erat. In sed neque ullamcorper, gravida quam quis, posuere turpis. Nam non ultricies mi. Phasellus id sapien luctus, varius lacus quis, facilisis sem.";
+  templates["section2"].innerText = "Aenean a molestie magna. Vestibulum elit erat, convallis id tristique a, interdum sit amet turpis. Nullam tincidunt mattis erat, id hendrerit urna semper ac. Nulla id metus eget mi accumsan tincidunt. Morbi posuere rhoncus sem, in luctus neque condimentum vitae. Praesent et dolor ut lectus posuere vestibulum. Etiam sed libero sed dolor sollicitudin ornare quis non ligula. Sed ex lacus, euismod eget luctus nec, rhoncus ac ex. Donec erat urna, egestas et auctor vitae, scelerisque at sem.";
+  templates["section3"].innerText = "Mauris faucibus rhoncus justo a elementum. Donec mattis rutrum turpis quis congue. Aenean tincidunt faucibus tellus, nec molestie nibh porta id. Maecenas pellentesque bibendum dui. Etiam eu lorem ligula. Vestibulum ac aliquam massa. Nullam mauris magna, sagittis non arcu et, hendrerit volutpat eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sit amet urna in arcu aliquet ullamcorper. In a velit ac ex elementum consequat. Aliquam ut iaculis lorem.";
+  templates["section1"].classList = "";
+  templates["section2"].classList = "";
+  templates["section3"].classList = "";
 }
 
 export default home;
